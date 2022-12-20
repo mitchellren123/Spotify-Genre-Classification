@@ -43,7 +43,7 @@ Although Accuracy scores improved significantly, these results are a bit mislead
 * R&B: (True) Test Precision = 48% | (True) Test Recall = 26% | (True) Test F-1 = 33%
 * Rock: (True) Test Precision = 73% | (True) Test Recall = 75% | (True) Test F-1 = 74%
 
-For each genre, the False cases heavily outweighed the True cases, and this had a siginficant impact test set model performance. Despite very high accuracy scores, the models did not do a good job predicting the True cases comparitively speaking.
+For each genre, the False cases heavily outweighed the True cases, and this had a siginficant impact on test set model performance. Despite very high accuracy scores, the models did not do a good job predicting the True cases comparitively speaking.
 
 ### Conclusion
 
