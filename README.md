@@ -8,8 +8,8 @@ My project submission seeks to classify Spotify songs into genres using song fea
 
 My stakeholder for this project is Spotify - an experiential music and audio content streaming service. The dataset I will be using for this analysis contains song data sourced directly from Spotify's API. It contains a mix of both categorical and numerical features. My goal is to build models that Spotify can use to categorize new songs into genres to then provide song recommendations to users building genre-based playlists.
 
-![graph1](./Images/genre_distribution.png)
-![graph1](./Images/feature_correlations.png)
+![graph1](./Images/data_types.png)
+![graph2](./Images/genre_distribution.png)
 
 
 ### Modeling Approach
@@ -39,6 +39,14 @@ Still not satisfied with the results, I thought about pivoting my approach. I ha
 
 Although Accuracy scores improved significantly, these results are a bit misleading given the high class imbalance in test datasets. Taking a closer look at Precision, Recall, and F-1 scores gives us a clearer picture of model performance:
 
+![graph3](./Images/edm_results.png)
+![graph4](./Images/pop_results.png)
+![graph5](./Images/latin_results.png)
+![graph6](./Images/hiphop_results.png)
+![graph7](./Images/rap_results.png)
+![graph8](./Images/rnb_results.png)
+![graph7](./Images/rock_results.png)
+
 
 * EDM: (True) Test Precision = 81% | (True) Test Recall = 77% | (True) Test F-1 = 79%
 * Pop: (True) Test Precision = 45% | (True) Test Recall = 47% | (True) Test F-1 = 46%
@@ -54,7 +62,7 @@ For each genre, the False cases heavily outweighed the True cases, and this had 
 
 The top-performing models were for EDM vs. Not EDM, Rock vs. Not Rock, and Latin vs. Not Latin. These results may suggest that those 3 genres are more distinct from the others - and Pop, R&B, HipHop, and Rap may share more similarities.
 
-For the purposes of suggesting songs for genre-based radio or playlists, model performance for Rock and EDM suggest an adequate ability to classify between songs within those genres and songs outside of those genres. Test F-1 scores of around 75% show a good balance between Recall and Precision, combined with 90%+ Accuracy scores - even on heavily class-imbalanced test datasets. Model performance for all other genres would need to be improved. In order to do so, I would suggest analyzing a much larger dataset with additional, distinguishing features included such as record label, album, artist, producer, etc. Another interesting next step would be to analyze the overlap in genres - in other words take a look at songs that were classified into multiple genres using these separate models.
+For the purposes of suggesting songs for genre-based radio or playlists, model performance for Rock and EDM suggest an adequate ability to classify between songs within those genres and songs outside of those genres. Test F-1 scores of around 75% show a good balance between Recall and Precision, combined with 90%+ Accuracy scores - even on heavily class-imbalanced test datasets. Model performance for all other genres would need to be improved. In order to do so, I would suggest analyzing a much larger dataset with additional, distinguishing features included such as record label, song lyrics data, etc. Another interesting next step would be to analyze the overlap in genres - in other words take a look at songs that were classified into multiple genres using these separate models.
 
 ## Repository Structure
 ```
