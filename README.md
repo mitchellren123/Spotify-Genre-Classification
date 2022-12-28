@@ -8,8 +8,7 @@ My project submission seeks to classify Spotify songs into genres using song fea
 
 My stakeholder for this project is Spotify - an experiential music and audio content streaming service. The dataset I will be using for this analysis contains song data sourced directly from Spotify's API. It contains a mix of both categorical and numerical features. My goal is to build models that Spotify can use to categorize new songs into genres to then provide song recommendations to users building genre-based playlists.
 
-![graph1](./Images/data_types.png)
-![graph2](./Images/genre_distribution.png)
+![graph1](./Images/genre_distribution.png)
 
 
 ### Modeling Approach
@@ -39,13 +38,13 @@ Still not satisfied with the results, I thought about pivoting my approach. I ha
 
 Although Accuracy scores improved significantly, these results are a bit misleading given the high class imbalance in test datasets. Taking a closer look at Precision, Recall, and F-1 scores gives us a clearer picture of model performance:
 
-![graph3](./Images/edm_results.png)
-![graph4](./Images/pop_results.png)
-![graph5](./Images/latin_results.png)
-![graph6](./Images/hiphop_results.png)
-![graph7](./Images/rap_results.png)
-![graph8](./Images/rnb_results.png)
-![graph7](./Images/rock_results.png)
+![graph2](./Images/edm_results.png)
+![graph3](./Images/pop_results.png)
+![graph4](./Images/latin_results.png)
+![graph5](./Images/hiphop_results.png)
+![graph6](./Images/rap_results.png)
+![graph7](./Images/rnb_results.png)
+![graph8](./Images/rock_results.png)
 
 
 * EDM: (True) Test Precision = 81% | (True) Test Recall = 77% | (True) Test F-1 = 79%
