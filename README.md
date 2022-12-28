@@ -56,5 +56,5 @@ For the purposes of suggesting songs for genre-based radio or playlists, model p
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── Spotify_Genre_Analysis.ipynb        <- Narrative documentation of analysis in Jupyter notebook
 ├── Presentation.pdf                    <- PDF version of project presentation
-├── spotify_genre_final.xlsx            <- King County Housing dataset
+├── spotify_genre_final.xlsx            <- Spotify song dataset
 ```
