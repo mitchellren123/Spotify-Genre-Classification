@@ -51,7 +51,10 @@ The top-performing models were for EDM vs. Not EDM, Rock vs. Not Rock, and Latin
 
 For the purposes of suggesting songs for genre-based radio or playlists, model performance for Rock and EDM suggest an adequate ability to classify between songs within those genres and songs outside of those genres. Test F-1 scores of around 75% show a good balance between Recall and Precision, combined with 90%+ Accuracy scores - even on heavily class-imbalanced test datasets. Model performance for all other genres would need to be improved. In order to do so, I would suggest analyzing a much larger dataset with additional, distinguishing features included such as record label, album, artist, producer, etc. Another interesting next step would be to analyze the overlap in genres - in other words take a look at songs that were classified into multiple genres using these separate models.
 
- ├── README.md                           <- The top-level README for reviewers of this project 
- ├── Spotify_Genre_Classification.ipynb  <- Narrative documentation of analysis in Jupyter notebook 
- ├── Presentation.pdf                    <- PDF version of project presentation 
- ├── spotify_genre_final.xlsx            <- King County Housing dataset
+## Repository Structure
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── Spotify_Genre_Analysis.ipynb        <- Narrative documentation of analysis in Jupyter notebook
+├── Presentation.pdf                    <- PDF version of project presentation
+├── spotify_genre_final.xlsx            <- King County Housing dataset
+```
